@@ -1,0 +1,46 @@
+CheickPoint algorithme
+
+À cette étape, il vous est demandé d'écrire un algorithme qui lit une phrase se terminant par un point, caractère par caractère, et qui détermine :
+
+Instructions
+La longueur de la phrase (le nombre de caractères).
+Le nombre de mots dans la phrase (en supposant que les mots sont séparés par un seul espace).
+Le nombre de voyelles dans la phrase.
+Il faut garder à l'esprit que : 
+
+Chaque personnage sera traité séparément.
+Le dernier caractère est le point.
+Utilisez trois variables comme compteurs.
+
+
+Résultats
+
+Variables :
+    longueur ← 0
+    mots ← 1
+    voyelles ← 0
+    caractère ← ''
+
+Début
+    Lire caractère
+
+    Tant que caractère ≠ '.' faire
+        longueur ← longueur + 1
+
+        Si caractère = ' ' alors
+            mots ← mots + 1
+        FinSi
+
+        Si caractère est une voyelle (a, e, i, o, u, y) alors
+            voyelles ← voyelles + 1
+        FinSi
+
+        Lire caractère
+    FinTantQue
+
+    longueur ← longueur + 1   // pour compter le point
+
+    Afficher longueur
+    Afficher mots
+    Afficher voyelles
+Fin
